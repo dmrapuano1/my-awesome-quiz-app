@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Which is not a cat?",
+    "choices": [
+      {"value": "Lion", "correct": false},
+      {"value": "Tiger", "correct": false},
+      {"value": "Bear", "correct": true},
+      {"value": "Domestic Short Hair", "correct": false}
+    ]
+  },
+  {
+    "label": "What animal is known it's speed?",
+    "choices": [
+      {"value": "Tortoise", "correct": false},
+      {"value": "Cheetah", "correct": true},
+      {"value": "Dolphin", "correct": false},
+      {"value": "Army Ant", "correct": false}
+    ]
+  }
+]
