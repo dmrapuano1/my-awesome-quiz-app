@@ -10,9 +10,9 @@ import { Question } from '../quiz.model';
 export class QuestionFormComponent implements OnInit {
 
   @Input() question: Question;
-  @Output() onChoiceMade = new EventEmitter<string>();
+  @Output() choiceMade = new EventEmitter<string>();
 
-  private form: FormGroup;
+  form: FormGroup;
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -23,6 +23,6 @@ export class QuestionFormComponent implements OnInit {
   }
 
   onChange = () => {
-    this.onChoiceMade.emit(this.form.value.choice);
+    this.choiceMade.emit(this.form.value.choice);
   }
 }
