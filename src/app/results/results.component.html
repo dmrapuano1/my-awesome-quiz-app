@@ -1,6 +1,9 @@
 <div class="results">
-  <h2>Results</h2>
+  <h2>Results:</h2>
   <div class="answer" *ngFor="let a of answers.values" [ngClass]="{correct: a.correct}">
-    {{a.value}}
+    Your answer '{{a.value}}' was {{a.correct === true ? 'correct!' : 'wrong'}}
+  </div><br>
+  <div class="btn-group btn-group-toggle">
+    <button class="btn btn-success" onclick="document.location = 'http://localhost:4200/welcome'">Home</button>
   </div>
 </div>
