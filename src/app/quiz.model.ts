@@ -1,3 +1,4 @@
+// Models of what each main variable should look like (keeps the typeScripting in one file for these variables)
 export class Choice {
   constructor(public value: string, public correct?: boolean) {}
 }

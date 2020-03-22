@@ -1,9 +1,11 @@
 <div class="results">
   <h2>Results:</h2>
+  <!-- Runs a forEach loop over the array of answers -->
   <div class="answer" *ngFor="let a of answers.values" [ngClass]="{correct: a.correct}">
     Your answer '{{a.value}}' was {{a.correct === true ? 'correct!' : 'wrong'}}
   </div><br>
   <div class="btn">
+    <!-- Routes user to main page on click -->
     <button class="btn" routerLink="/welcome">Home</button>
   </div>
 </div>

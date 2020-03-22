@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
-import { switchMap } from 'rxjs/operators';
-
 import { QuestionsService } from '../questions.service';
 import { Quiz, Answers, Choice, Question } from '../quiz.model';
 
+// Tells the component what to use when script is called
 @Component({
+  // Name in other parts of app
   selector: 'app-questions',
+  // HTML and SCSS to call
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.scss']
 })
+
 export class QuestionsComponent implements OnInit {
 
   public quiz: Quiz;
@@ -35,19 +36,24 @@ export class QuestionsComponent implements OnInit {
       });
   }
 
+  // Gives value to user's choice on particular question
   updateChoice(choice: Choice) {
     this.answers.values[this.currentQuestionIndex] = choice;
   }
 
+  // Logic to be called when user submits answer to a question
   nextOrViewResults() {
+    // If the question was the last question, loads results
     if (this.currentQuestionIndex === this.questions.length - 1) {
       this.showResults = true;
       return;
     }
 
+    // Pushes user to next question
     this.currentQuestionIndex++;
   }
 
+  // Sets all values to undefined to ensure no issues on subsequent quizzes
   reset() {
     this.quiz = undefined;
     this.questions = undefined;

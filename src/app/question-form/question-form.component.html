@@ -1,6 +1,8 @@
+<!-- ngIF acts as switch to only run if question is defined -->
 <div class="quiz" *ngIf="question">
   <h2 class="question">{{question.label}}</h2>
   <form [formGroup]="form">
+    <!-- formatted as ul so the choices display in list format -->
     <ul class="btn-group btn-group-toggle">
       <li class="answer" *ngFor="let choice of question.choices" ngbButtonLabel>
         <input type="radio" [value]="choice" formControlName="choice">

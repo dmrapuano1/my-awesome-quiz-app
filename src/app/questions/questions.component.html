@@ -1,7 +1,10 @@
+<!-- Loads when screen is loading -->
 <div *ngIf="quiz && !questions" class="spinner-grow text-primary"></div>
 
+<!-- Loads when there is an active quiz -->
 <div class="quiz" *ngIf="questions">
 
+  <!-- Loads when quiz is not finished -->
   <div class="questions"*ngIf="!showResults">
     <h1 class="questionNumber">{{'Question ' + (currentQuestionIndex + 1)}}</h1>
     <app-question-form
@@ -16,5 +19,6 @@
     >{{currentQuestionIndex === questions.length - 1 ? 'View results' : 'Next'}}</button>
   </div>
 
+  <!-- Loads when results are to be shown -->
   <app-results *ngIf="showResults" [answers]="answers"></app-results>
 </div>
