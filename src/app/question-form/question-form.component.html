@@ -1,11 +1,11 @@
 <div class="quiz" *ngIf="question">
-  <h1>{{question.label}}</h1>
+  <h2 class="question">{{question.label}}</h2>
   <form [formGroup]="form">
-    <div class="form-group">
-      <label *ngFor="let choice of question.choices">
+    <ul class="btn-group btn-group-toggle">
+      <li class="answer" *ngFor="let choice of question.choices" ngbButtonLabel>
         <input type="radio" [value]="choice" formControlName="choice">
         <span>{{choice.value}}</span>
-      </label>
-    </div>
+      </li>
+    </ul>
   </form>
 </div>

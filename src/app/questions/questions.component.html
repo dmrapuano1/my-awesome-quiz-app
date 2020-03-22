@@ -2,10 +2,11 @@
 
 <div class="quiz" *ngIf="questions">
 
-  <div class="questions" *ngIf="!showResults">
+  <div class="questions"*ngIf="!showResults">
+    <h1 class="questionNumber">{{'Question ' + (currentQuestionIndex + 1)}}</h1>
     <app-question-form
       [question]="questions[currentQuestionIndex]"
-      (onChoiceMade)="updateChoice($event)">
+      (choiceMade)="updateChoice($event)">
     </app-question-form>
 
     <button
