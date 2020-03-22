@@ -3,7 +3,7 @@
   <div class="answer" *ngFor="let a of answers.values" [ngClass]="{correct: a.correct}">
     Your answer '{{a.value}}' was {{a.correct === true ? 'correct!' : 'wrong'}}
   </div><br>
-  <div class="btn-group btn-group-toggle">
-    <button class="btn btn-success" onclick="document.location = 'https://dmrapuano1.github.io/my_awesome_quiz_app/welcome'">Home</button>
+  <div class="btn">
+    <button class="btn" routerLink="/welcome">Home</button>
   </div>
 </div>
