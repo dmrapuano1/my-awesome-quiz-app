@@ -1,20 +1,47 @@
 [
   {
-    "label": "What is 2 + 3?",
+    "label": "Which is a prime number?",
     "choices": [
-      {"value": "5", "correct": true},
-      {"value": "15", "correct": false},
-      {"value": "3", "correct": false},
-      {"value": "pi", "correct": false}
+      {"value": "0", "correct": false},
+      {"value": "1", "correct": false},
+      {"value": "2", "correct": false},
+      {"value": "4", "correct": true}
     ]
   },
   {
-    "label": "What is 3 - 9?",
+    "label": "Which is NOT a cube number?",
     "choices": [
+      {"value": "1", "correct": false},
+      {"value": "8", "correct": false},
+      {"value": "27", "correct": false},
+      {"value": "48", "correct": true}
+    ]
+  },
+  {
+    "label": "What is \"3 - (-1)\"?",
+    "choices": [
+      {"value": "1", "correct": false},
+      {"value": "2", "correct": true},
       {"value": "3", "correct": false},
-      {"value": "-6", "correct": true},
-      {"value": "Bonjour", "correct": false},
-      {"value": "pi", "correct": false}
+      {"value": "-2", "correct": false}
+    ]
+  },
+  {
+    "label": "What is 13 squared",
+    "choices": [
+      {"value": "26", "correct": false},
+      {"value": "169", "correct": true},
+      {"value": "256", "correct": false},
+      {"value": "1276", "correct": false}
+    ]
+  },
+  {
+    "label": "What is \"1 + 6 * 2\"?",
+    "choices": [
+      {"value": "9", "correct": false},
+      {"value": "12", "correct": false},
+      {"value": "13", "correct": true},
+      {"value": "14", "correct": false}
     ]
   }
 ]

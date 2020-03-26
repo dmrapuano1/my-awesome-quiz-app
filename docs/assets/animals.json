@@ -1,20 +1,47 @@
 [
   {
-    "label": "Which is not a cat?",
+    "label": "What is the largest hawk in North America?",
     "choices": [
-      {"value": "Lion", "correct": false},
-      {"value": "Tiger", "correct": false},
-      {"value": "Bear", "correct": true},
-      {"value": "Domestic Short Hair", "correct": false}
+      {"value": "Red Shouldered Hawk", "correct": false},
+      {"value": "Red Tailed Hawk", "correct": false},
+      {"value": "Sharp Shinned Hawk", "correct": false},
+      {"value": "Ferruginous Hawk", "correct": true}
     ]
   },
   {
-    "label": "What animal is known it's speed?",
+    "label": "Which is not a canine species?",
     "choices": [
-      {"value": "Tortoise", "correct": false},
-      {"value": "Cheetah", "correct": true},
-      {"value": "Dolphin", "correct": false},
-      {"value": "Army Ant", "correct": false}
+      {"value": "Wolf", "correct": false},
+      {"value": "Coyote", "correct": false},
+      {"value": "Bingo", "correct": true},
+      {"value": "Dingo", "correct": false}
+    ]
+  },
+  {
+    "label": "Which big car is known to love water?",
+    "choices": [
+      {"value": "Tiger", "correct": true},
+      {"value": "Snow Leopard", "correct": false},
+      {"value": "Black Jaguar", "correct": false},
+      {"value": "Ocelot", "correct": false}
+    ]
+  },
+  {
+    "label": "Which big cat does not purr?",
+    "choices": [
+      {"value": "Lion", "correct": false},
+      {"value": "Cheetah", "correct": false},
+      {"value": "Tiger", "correct": true},
+      {"value": "Cougar", "correct": false}
+    ]
+  },
+  {
+    "label": "Which is not part of the bear species?",
+    "choices": [
+      {"value": "Black Bear", "correct": false},
+      {"value": "Polar Bear", "correct": false},
+      {"value": "Giant Panda", "correct": false},
+      {"value": "Koala Bear", "correct": true}
     ]
   }
 ]
