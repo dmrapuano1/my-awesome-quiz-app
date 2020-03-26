@@ -21,8 +21,8 @@
     "label": "What is \"3 - (-1)\"?",
     "choices": [
       {"value": "1", "correct": false},
-      {"value": "2", "correct": true},
-      {"value": "3", "correct": false},
+      {"value": "2", "correct": false},
+      {"value": "4", "correct": true},
       {"value": "-2", "correct": false}
     ]
   },
