@@ -18,7 +18,7 @@
     ]
   },
   {
-    "label": "Which big car is known to love water?",
+    "label": "Which big cat is known to love water?",
     "choices": [
       {"value": "Tiger", "correct": true},
       {"value": "Snow Leopard", "correct": false},
